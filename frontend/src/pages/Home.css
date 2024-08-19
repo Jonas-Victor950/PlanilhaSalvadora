@@ -1,0 +1,392 @@
+#notaDeReal1 {
+  width: 30vw;
+  margin-bottom: -30px;
+}
+#notaDeRealDiv {
+  text-align: right;
+}
+#PartOneMobile,
+#PartThreeMobile {
+  background-color: #f2f2f2;
+}
+#PartOneMobile .contentOneMobile {
+  margin-left: 10vw;
+  font-family: "Abril Fatface", serif;
+}
+
+#PartOneMobile .textOne {
+  font-size: 1.5em;
+  color: #242424;
+  font-weight: 400;
+  margin-bottom: -20px;
+}
+
+#PartOneMobile .textTwo {
+  font-size: 4em;
+  font-weight: 400;
+  background: linear-gradient(to right, #1fa966, #198852);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: -10px;
+}
+
+#PartOneMobile .same-line {
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #242424;
+  display: flex;
+  align-items: center;
+  margin-bottom: -10px;
+}
+
+#PartOneMobile .same-line span {
+  background: linear-gradient(to right, #1fa966, #198852);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.9em;
+  margin-left: 10px;
+}
+
+#PartOneMobile .textFour {
+  font-weight: 400;
+  font-size: 2em;
+  color: #242424;
+  display: flex;
+  align-items: center;
+}
+
+#PartOneMobile button {
+  color: white;
+  background: linear-gradient(to right, #198852, #3ba873);
+  border-radius: 20px;
+  font-size: 2em;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  font-family: "Abril Fatface", serif;
+  border-style: none;
+}
+
+#PartOneMobile {
+  position: relative;
+  padding-bottom: 100px; /* Adiciona espaço suficiente para garantir que o conteúdo não seja cortado */
+}
+
+#PartOneMobile .images {
+  margin-top: 50px;
+  position: relative;
+}
+
+#PartOneMobile .imageSheet {
+  width: 30vw;
+  position: relative; /* Mantém a imagem no fluxo do documento */
+  z-index: 1;
+  margin-bottom: -150px; /* Ajuste para sobreposição */
+}
+
+#PartOneMobile .imageNotebook {
+  width: 75vw;
+  position: relative; /* Mantém a imagem no fluxo do documento */
+  z-index: 0;
+}
+
+#PartTwoMobile {
+  background: linear-gradient(to right, #198852, #3ba873);
+}
+
+#PartTwoMobile .texts {
+  margin-left: 20vw;
+  color: white;
+  font-family: "Abril Fatface", serif;
+  margin-bottom: 50px;
+}
+
+#PartTwoMobile .textOne {
+  font-size: 3em;
+}
+#PartTwoMobile .textTwo {
+  font-size: 2em;
+  color: #198852;
+  background-color: white;
+  margin-left: -5px;
+  padding-left: 5px;
+  display: inline;
+  margin-right: -5px;
+  padding-right: 5px;
+}
+
+#PartTwoMobile .textThree,
+#PartTwoMobile .textFour {
+  font-size: 2em;
+}
+
+#PartTwoMobile .formats div {
+  color: white;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#PartTwoMobile .formatOne {
+  background-color: #3ba873;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  font-size: 1em;
+}
+
+#PartTwoMobile .formatTwo {
+  background-color: #39cd85;
+  font-size: 1.1em;
+  margin-top: -20px;
+  margin-left: 48vw;
+  margin-right: 10vw;
+  padding-left: 40px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 30px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  z-index: 2; /* Aumenta o z-index para sobrepor */
+  position: relative; /* Necessário para que o z-index funcione */
+}
+
+#PartTwoMobile .formatThree {
+  background-color: #3ebf81;
+  font-size: 0.9em;
+  margin-left: 15vw;
+  margin-right: 17vw;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-top: -20px;
+  z-index: 0;
+  position: relative;
+}
+
+#PartTwoMobile .formatFour {
+  background-color: #30c57c;
+  margin-left: 18vw;
+  margin-right: 20vw;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  font-size: 0.85em;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-top: -10px;
+  z-index: 1;
+  position: relative;
+}
+
+#PartTwoMobile .formatFive {
+  background-color: #22c576;
+  font-size: 0.9em;
+  margin-left: 17vw;
+  margin-right: 18vw;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-top: -15px;
+  z-index: 2;
+  position: relative;
+}
+
+#PartTwoMobile .redirect,
+#PartFourMobile .redirect {
+  display: flex;
+  justify-content: center;
+}
+
+#PartTwoMobile .redirect button,
+#PartFourMobile .redirect button {
+  background: linear-gradient(to right, #ffffff, #cecece);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 30px;
+  border-radius: 15px;
+  border: none;
+  font-size: 1.2em;
+  color: #1b6641;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+#PartTwoMobile .redirect button:hover,
+#PartFourMobile .redirect button:hover {
+  font-size: 1.4em;
+  transition: 0.4s;
+}
+
+#PartThreeMobile {
+  background-color: #f2f2f2;
+}
+#PartThreeMobile {
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  font-family: "Abril Fatface", serif;
+  background: linear-gradient(to right, #1fa966, #198852);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#PartFourMobile {
+  background: #198852;
+}
+
+#PartFourMobile .video iframe {
+  margin-left: 15vw;
+  width: 70vw;
+  margin-top: 30px;
+  border: none;
+}
+
+#PartFourMobile .text {
+  font-family: "Abril Fatface", serif;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.7em;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+#PartFiveMobile {
+  background: linear-gradient(to right, #f2f2f2, #d8d8d8);
+}
+#PartFiveMobile .textOne {
+  background: linear-gradient(to right, #1fa966, #198852);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-top: 40px;
+  font-size: 1.9em;
+  font-family: "Abril Fatface", serif;
+}
+#PartFiveMobile .textAndImage {
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  font-size: 0.85em;
+  color: #1b6641;
+}
+
+#PartFiveMobile .textAndImage .imageOne {
+  display: block;
+  width: 10vw;
+  margin-top: -100px;
+  rotate: 180deg;
+  margin-left: 50vw;
+}
+#PartFiveMobile .textAndImage .imageTwo {
+  display: block;
+  width: 20vw;
+  rotate: 180deg;
+  margin-top: -30px;
+  margin-left: 53vw;
+}
+
+#PartFiveMobile .images {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#PartFiveMobile .images img {
+  width: 50vw;
+}
+
+#PartFiveMobile .images .imageOne {
+  margin-left: 15vw;
+}
+#PartFiveMobile .images .imageTwo {
+  margin-left: 35vw;
+  margin-top: -40px;
+}
+
+#PartFiveMobile .prices {
+  display: flex;
+  justify-content: center;
+  font-family: "Abril Fatface", serif;
+  color: #1b6641;
+  margin-top: 30px;
+}
+
+#PartFiveMobile .prices .smallPrice {
+  font-size: 1em;
+}
+#PartFiveMobile .prices .biggerPrice {
+  font-size: 3.6em;
+  background: linear-gradient(to right, #1fa966, #198852);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
+#PartFiveMobile .prices .smallPrice .priceOne {
+  text-decoration: line-through;
+}
+
+#PartFiveMobile .redirect {
+  display: flex;
+  justify-content: center;
+}
+
+#PartFiveMobile .redirect button {
+  background: linear-gradient(to right, #198852, #3ba873);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 30px;
+  border-radius: 15px;
+  border: none;
+  font-size: 1.2em;
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+#PartFiveMobile .redirect button:hover {
+  font-size: 1.4em;
+  transition: 0.4s;
+}
+
+#PartSixMobile {
+  background-color: #1b6641;
+  display: flex;
+  font-size: 0.8em;
+  color: #FFFFFF;
+  justify-content: center;
+  gap: 10vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#PartSixMobile .right {
+  text-align: right;
+}
