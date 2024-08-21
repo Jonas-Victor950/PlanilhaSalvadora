@@ -2,6 +2,14 @@
   width: 30vw;
   margin-bottom: -30px;
 }
+.notaDeCem1 img{
+  width: 15vw;
+  margin-bottom: -70px;
+}
+#PartOneDesktop,
+#PartTwoDesktop {
+  display: none;
+}
 #notaDeRealDiv {
   text-align: right;
 }
@@ -67,11 +75,16 @@
   margin-top: 30px;
   font-family: "Abril Fatface", serif;
   border-style: none;
+  cursor: pointer;
+}
+
+#PartOneMobile button:hover {
+  transition: 0.5s;
+  font-size: 2.2em;
 }
 
 #PartOneMobile {
   position: relative;
-  padding-bottom: 100px; /* Adiciona espaço suficiente para garantir que o conteúdo não seja cortado */
 }
 
 #PartOneMobile .images {
@@ -227,6 +240,7 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: 500;
   cursor: pointer;
+  z-index: 2;
 }
 #PartTwoMobile .redirect button:hover,
 #PartFourMobile .redirect button:hover {
@@ -268,6 +282,16 @@
   font-size: 1.7em;
   margin-left: 15vw;
   margin-right: 15vw;
+  z-index: 2;
+  position: relative;
+}
+#PartFourMobile .house {
+  text-align: right;
+  margin-top: -70px;
+}
+#PartFourMobile .house img {
+  width: 20vw;
+  z-index: 1;
 }
 
 #PartFiveMobile {
@@ -328,14 +352,22 @@
 
 #PartFiveMobile .prices {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   font-family: "Abril Fatface", serif;
   color: #1b6641;
   margin-top: 30px;
 }
 
+#PartFiveMobile .prices div {
+  display: flex;
+  justify-content: center;
+}
+
 #PartFiveMobile .prices .smallPrice {
   font-size: 1em;
+  display: flex;
+  flex-direction: column;
 }
 #PartFiveMobile .prices .biggerPrice {
   font-size: 3.6em;
@@ -380,7 +412,7 @@
   background-color: #1b6641;
   display: flex;
   font-size: 0.8em;
-  color: #FFFFFF;
+  color: #ffffff;
   justify-content: center;
   gap: 10vw;
   padding-top: 20px;
@@ -389,4 +421,459 @@
 
 #PartSixMobile .right {
   text-align: right;
+}
+
+/** Desktop **/
+@media screen and (min-width: 730px) {
+  #PartOneMobile,
+  #PartTwoMobile {
+    display: none;
+  }
+  #PartOneDesktop,
+  #PartTwoDesktop {
+    display: block;
+  }
+  #notaDeReal1 {
+    width: 10vw;
+    margin-bottom: 0;
+  }
+  #notaDeRealDiv {
+    text-align: center;
+    margin-left: 20vw;
+  }
+  .notaDeCem img{
+    width: 15vw;
+    margin-top: -100px;
+    margin-bottom: -180px;
+    padding-left: 10vw;
+  }
+  #PartOneDesktop,
+  #PartThreeDesktop {
+    background-color: #f2f2f2;
+  }
+  #PartOneDesktop .contentOneDesktop {
+    display: flex;
+    margin-left: 20vw;
+    font-family: "Abril Fatface", serif;
+  }
+
+  #PartOneDesktop .textOne {
+    font-size: 1.5em;
+    color: #242424;
+    font-weight: 400;
+    margin-bottom: -20px;
+  }
+
+  #PartOneDesktop .textTwo {
+    font-size: 4em;
+    font-weight: 400;
+    background: linear-gradient(to right, #1fa966, #198852);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: -10px;
+  }
+
+  #PartOneDesktop .same-line {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #242424;
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+  }
+
+  #PartOneDesktop .same-line span {
+    background: linear-gradient(to right, #1fa966, #198852);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.9em;
+    margin-left: 10px;
+  }
+
+  #PartOneDesktop .textFour {
+    font-weight: 400;
+    font-size: 2em;
+    color: #242424;
+    display: flex;
+    align-items: center;
+  }
+
+  #PartOneDesktop button {
+    color: white;
+    background: linear-gradient(to right, #198852, #3ba873);
+    border-radius: 20px;
+    font-size: 2em;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-family: "Abril Fatface", serif;
+    border-style: none;
+    cursor: pointer;
+  }
+
+  #PartOneDesktop button:hover {
+    transition: 0.5s;
+    font-size: 2.2em;
+  }
+
+  #PartOneDesktop {
+    padding-bottom: 100px; /* Adiciona espaço suficiente para garantir que o conteúdo não seja cortado */
+  }
+  #PartOneDesktop .images {
+    display: flex;
+    justify-content: start;
+  }
+
+  #PartOneDesktop .imageSheet {
+    width: 13vw;
+    z-index: 1;
+    margin-bottom: 100px;
+
+    position: relative;
+  }
+
+  #PartOneDesktop .imageNotebook {
+    width: 35vw;
+    margin-left: -13vw;
+    z-index: 0;
+  }
+
+  #PartTwoDesktop {
+    background: linear-gradient(to right, #198852, #3ba873);
+    display: flex;
+    padding-right: 20vw;
+    padding-left: 20vw;
+  }
+
+  #PartTwoDesktop .texts {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Abril Fatface", serif;
+    margin-bottom: 50px;
+  }
+
+  #PartTwoDesktop .textOne {
+    font-size: 2.7em;
+  }
+  #PartTwoDesktop .textTwo {
+    font-size: 1.7em;
+    color: #198852;
+    background-color: white;
+    margin-left: -5px;
+    padding-left: 5px;
+    display: inline;
+    margin-right: -5px;
+    padding-right: 5px;
+  }
+
+  #PartTwoDesktop .textThree,
+  #PartTwoDesktop .textFour {
+    font-size: 1.6em;
+  }
+
+  #PartTwoDesktop .formats {
+    width: 30vw;
+    margin-top: 30px;
+    margin-left: -5vw;
+  }
+
+  #PartTwoDesktop .formats div {
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  #PartTwoDesktop .formatOne {
+    background-color: #3ba873;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-size: 0.8em;
+    width: 20vw;
+  }
+
+  #PartTwoDesktop .formatTwo {
+    width: 8vw;
+    background-color: #39cd85;
+    font-size: 0.8em;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    margin-left: 20vw;
+    margin-top: -30px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    z-index: 2; /* Aumenta o z-index para sobrepor */
+    position: relative; /* Necessário para que o z-index funcione */
+  }
+
+  #PartTwoDesktop .formatThree {
+    background-color: #3ebf81;
+    font-size: 0.8em;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 20vw;
+    margin-left: 5vw;
+    margin-top: -20px;
+    z-index: 0;
+    position: relative;
+  }
+
+  #PartTwoDesktop .formatFour {
+    background-color: #30c57c;
+    width: 20vw;
+    margin-left: 3vw;
+    margin-top: -10px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    font-size: 0.8em;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    z-index: 1;
+    position: relative;
+  }
+
+  #PartTwoDesktop .formatFive {
+    margin-top: 70px;
+    background-color: #22c576;
+    font-size: 1em;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 20vw;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  #PartTwoDesktop .redirect,
+  #PartFourDesktop .redirect {
+    display: flex;
+    justify-content: center;
+    margin-left: -15vw;
+    margin-top: -20px;
+  }
+
+  #PartTwoDesktop .redirect button,
+  #PartFourDesktop .redirect button {
+    background: linear-gradient(to right, #ffffff, #cecece);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.2em;
+    color: #1b6641;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  #PartTwoDesktop .redirect button:hover,
+  #PartFourDesktop .redirect button:hover {
+    font-size: 1.4em;
+    transition: 0.4s;
+  }
+  #PartFourMobile {
+    background: #198852;
+    display: flex;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  #PartFourMobile .video iframe {
+    margin-left: 10vw;
+
+    margin-top: 0;
+    width: 40vw;
+    height: 300px;
+    border: none;
+  }
+
+  #PartFourMobile .second {
+    margin-top: 70px;
+    width: 30vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #PartFourMobile .second .text {
+    font-family: "Abril Fatface", serif;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 2em;
+  }
+
+  #PartFourMobile .house {
+    margin-left: 25vw;
+    margin-top: -100px;
+  }
+
+  #PartFourMobile .house img {
+    width: 15vw;
+  }
+  #PartFiveMobile .textOne {
+    text-align: center;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    padding-top: 40px;
+    font-size: 2.3em;
+    font-family: "Abril Fatface", serif;
+  }
+  #PartFiveMobile .textAndImage {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    font-size: 1.2em;
+    color: #1b6641;
+  }
+
+  #PartFiveMobile .textAndImage .imageOne {
+    display: block;
+    width: 5vw;
+    margin-top: -100px;
+    rotate: 180deg;
+    margin-left: 50vw;
+  }
+  #PartFiveMobile .textAndImage .imageTwo {
+    display: block;
+    width: 10vw;
+    rotate: 180deg;
+    margin-top: -30px;
+    margin-left: 53vw;
+  }
+
+  #PartFiveMobile .images {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #PartFiveMobile .images img {
+    width: 20vw;
+  }
+
+  #PartFiveMobile .images .imageOne {
+    margin-left: 15vw;
+  }
+  #PartFiveMobile .images .imageTwo {
+    margin-left: 25vw;
+    margin-top: -50px;
+  }
+
+  #PartFiveMobile .videosAndPrices {
+    display: flex;
+    gap: 5vw;
+    margin-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  #PartFiveMobile .prices {
+    margin-top: -10px;
+  }
+
+  #PartFiveMobile .prices .smallPrice {
+    font-size: 1.2em;
+  }
+  #PartFiveMobile .prices .biggerPrice {
+    font-size: 3.7em;
+    margin-top: -10px;
+  }
+
+  #PartFiveMobile .redirect button {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  #PartFiveMobile .redirect button:hover {
+    font-size: 1.4em;
+    transition: 0.4s;
+  }
+  #PartSixMobile {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #PartFiveMobile .videosAndPrices {
+    margin-top: -10px;
+  }
+
+  #PartFiveMobile .prices .smallPrice {
+    font-size: 1.5em;
+  }
+  #PartFiveMobile .prices .biggerPrice {
+    font-size: 4.3em;
+  }
+
+  #PartFiveMobile .redirect button {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #PartTwoDesktop .textOne {
+    font-size: 3.3em;
+  }
+  #PartTwoDesktop .textTwo {
+    font-size: 2.3em;
+  }
+
+  #PartTwoDesktop .textThree,
+  #PartTwoDesktop .textFour {
+    font-size: 2.3em;
+  }
+
+  #PartTwoDesktop .formatOne {
+    font-size: 1em;
+  }
+
+  #PartTwoDesktop .formatTwo {
+    font-size: 1em;
+  }
+
+  #PartTwoDesktop .formatThree {
+    font-size: 1em;
+  }
+
+  #PartTwoDesktop .formatFour {
+    font-size: 1em;
+  }
+
+  #PartTwoDesktop .formatFive {
+    font-size: 1em;
+    margin-top: 30px;
+  }
+  #PartTwoDesktop .redirect,
+  #PartFourDesktop .redirect {
+    margin-left: -10vw;
+  }
+  #PartFiveMobile .videosAndPrices {
+    margin-top: -30px;
+  }
 }
