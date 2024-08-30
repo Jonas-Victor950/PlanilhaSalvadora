@@ -9,9 +9,23 @@ import seta from "../images/seta.png";
 import house from "../images/Group.png";
 import notaDeCem from "../images/nota100real.png";
 import notaDeCem1 from "../images/nota100real1.png";
-import React from "react";
+import React, { useRef } from "react";
 
 const Home = () => {
+  const contentRef = useRef(null);
+  const contentRefMobile = useRef(null);
+
+  const linkSheet = () => {
+    window.open("https://pay.kiwify.com.br/BvcfJ4k", "_blank");
+  };
+
+  const handleScrollToContentRef = () => {
+    contentRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleScrollToContentRefMobile = () => {
+    contentRefMobile.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <div id="PartOneMobile">
@@ -28,7 +42,9 @@ const Home = () => {
             </div>
 
             <div className="textFour">COM UMA PLANILHA</div>
-            <button>Como Funciona?</button>
+            <button onClick={handleScrollToContentRefMobile}>
+              Como Funciona?
+            </button>
             <div className="images">
               <div>
                 {" "}
@@ -60,7 +76,7 @@ const Home = () => {
             </div>
 
             <div className="textFour">COM UMA PLANILHA</div>
-            <button>Como Funciona?</button>
+            <button onClick={handleScrollToContentRef}>Como Funciona?</button>
           </div>
           <div className="images">
             <div>
@@ -74,7 +90,7 @@ const Home = () => {
           <img src={notaDeCem} alt="" />
         </div>
       </div>
-      <div id="PartTwoMobile">
+      <div id="PartTwoMobile" ref={contentRefMobile}>
         <div className="texts">
           <div className="textOne">POR QUE</div>
           <div className="textTwo">VOCÊ PRECISA</div>
@@ -105,11 +121,11 @@ const Home = () => {
             de imediato a gestão financeira profissional do seu empreendimento.
           </div>
         </div>
-        <div className="redirect">
-          <button>Adquirir Planilha</button>
+        <div className="redirect" >
+          <button className="bt_carrinho" onClick={linkSheet}>Adquirir Planilha</button>
         </div>
       </div>
-      <div id="PartTwoDesktop">
+      <div id="PartTwoDesktop" ref={contentRef}>
         <div className="texts">
           <div>
             <div className="textOne">POR QUE</div>
@@ -131,8 +147,8 @@ const Home = () => {
             />
           </div>
 
-          <div className="redirect">
-            <button>Adquirir Planilha</button>
+          <div className="redirect" >
+            <button className="bt_carrinho" onClick={linkSheet}>Adquirir Planilha</button>
           </div>
         </div>
         <div className="formats">
@@ -162,15 +178,18 @@ const Home = () => {
       <div id="PartFourMobile">
         <div className="video">
           <iframe
-            src="https://www.youtube.com/embed/fUEsQyO53Zs"
+            src="https://www.youtube.com/embed/sGJ7Vo6g7bg?si=GyqNqarKdVHdXIxJ"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           ></iframe>
         </div>
         <div className="second">
           <div>
-            <div className="text">VEJA O DEPOIMENTO DE QUEM USOU</div>
+            <div className="text">
+              POR QUE VOCÊ DEVE PROFISSIONALIZAR A GESTÃO FINANCEIRA DA SUA
+              EMPRESA? ENTENDA!
+            </div>
             <div className="redirect">
-              <button>Quero a Minha Planilha</button>
+              <button className="bt_carrinho" onClick={linkSheet}>Quero a Minha Planilha</button>
             </div>
           </div>
           <div className="house">
@@ -205,7 +224,7 @@ const Home = () => {
               <div className="biggerPrice">R$29,70</div>
             </div>
             <div className="redirect">
-              <button>Adquirir Planilha</button>
+              <button className="bt_carrinho" onClick={linkSheet}>Adquirir Planilha</button>
             </div>
           </div>
         </div>

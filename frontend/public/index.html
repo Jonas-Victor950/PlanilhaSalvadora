@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/IMG_8084.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -21,6 +21,67 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Questrial&display=swap"
       rel="stylesheet"
     />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+
+      // Inicializa o pixel com seu ID
+      fbq("init", "1945099776002551");
+
+      // Evento padrão de visualização de página
+      fbq("track", "PageView");
+
+      // Evento de teste
+      fbq("track", "TEST44688");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1945099776002551&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Código para rastrear o clique em elementos com a classe 'bt_carrinho' -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Função para rastrear o evento de clique no elemento com a classe CSS 'bt_carrinho'
+        var reply_click = function () {
+          fbq("track", "Botão do Carrinho");
+        };
+
+        // Pega todos os elementos com a classe CSS 'bt_carrinho'
+        var elementos = document.getElementsByClassName("bt_carrinho");
+
+        // Adiciona o evento de clique a todos os elementos com a classe CSS 'bt_carrinho'
+        for (var i = 0; i < elementos.length; i++) {
+          elementos[i].onclick = reply_click;
+        }
+      });
+    </script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -30,7 +91,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Planilha Salvadora</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

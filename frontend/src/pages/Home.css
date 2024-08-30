@@ -710,7 +710,7 @@
   }
 
   #PartFourMobile .second {
-    margin-top: 70px;
+    margin-top: 25px;
     width: 30vw;
     margin-left: 5vw;
     display: flex;
@@ -730,11 +730,11 @@
 
   #PartFourMobile .house {
     margin-left: 25vw;
-    margin-top: -100px;
+    margin-top: -270px;
   }
 
   #PartFourMobile .house img {
-    width: 15vw;
+    width: 20vw;
   }
   #PartFiveMobile .textOne {
     text-align: center;
