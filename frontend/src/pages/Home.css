@@ -2,24 +2,40 @@
   width: 30vw;
   margin-bottom: -30px;
 }
-.notaDeCem1 img{
+.notaDeCem1 img {
   width: 15vw;
-  margin-bottom: -70px;
+  margin-bottom: -55px;
+  margin-top: -30px;
 }
-#PartOneDesktop,
-#PartTwoDesktop {
+#PartOneDesktop {
   display: none;
 }
 #notaDeRealDiv {
   text-align: right;
 }
-#PartOneMobile,
-#PartThreeMobile {
+#PartOneMobile .video {
+  margin-top: 20px;
+  margin-left: 10vw;
+  width: 80vw; /* Define 80% da largura da viewport */
+  position: relative;
+  padding-bottom: 45%; /* Proporção de 16:9 (9/16 * 80vw) */
+  height: 0;
+}
+#PartOneMobile .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+#PartOneMobile {
   background-color: #f2f2f2;
 }
 #PartOneMobile .contentOneMobile {
-  margin-left: 10vw;
   font-family: "Abril Fatface", serif;
+  display: flex;
+  justify-content: center;
 }
 
 #PartOneMobile .textOne {
@@ -63,170 +79,8 @@
   align-items: center;
 }
 
-#PartOneMobile button {
-  color: white;
+#PartOneMobile .redirect button {
   background: linear-gradient(to right, #198852, #3ba873);
-  border-radius: 20px;
-  font-size: 2em;
-  padding-left: 40px;
-  padding-top: 10px;
-  padding-right: 40px;
-  padding-bottom: 10px;
-  margin-top: 30px;
-  font-family: "Abril Fatface", serif;
-  border-style: none;
-  cursor: pointer;
-}
-
-#PartOneMobile button:hover {
-  transition: 0.5s;
-  font-size: 2.2em;
-}
-
-#PartOneMobile {
-  position: relative;
-}
-
-#PartOneMobile .images {
-  margin-top: 50px;
-  position: relative;
-}
-
-#PartOneMobile .imageSheet {
-  width: 30vw;
-  position: relative; /* Mantém a imagem no fluxo do documento */
-  z-index: 1;
-  margin-bottom: -150px; /* Ajuste para sobreposição */
-}
-
-#PartOneMobile .imageNotebook {
-  width: 75vw;
-  position: relative; /* Mantém a imagem no fluxo do documento */
-  z-index: 0;
-}
-
-#PartTwoMobile {
-  background: linear-gradient(to right, #198852, #3ba873);
-}
-
-#PartTwoMobile .texts {
-  margin-left: 20vw;
-  color: white;
-  font-family: "Abril Fatface", serif;
-  margin-bottom: 50px;
-}
-
-#PartTwoMobile .textOne {
-  font-size: 3em;
-}
-#PartTwoMobile .textTwo {
-  font-size: 2em;
-  color: #198852;
-  background-color: white;
-  margin-left: -5px;
-  padding-left: 5px;
-  display: inline;
-  margin-right: -5px;
-  padding-right: 5px;
-}
-
-#PartTwoMobile .textThree,
-#PartTwoMobile .textFour {
-  font-size: 2em;
-}
-
-#PartTwoMobile .formats div {
-  color: white;
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-#PartTwoMobile .formatOne {
-  background-color: #3ba873;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 30px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  font-size: 1em;
-}
-
-#PartTwoMobile .formatTwo {
-  background-color: #39cd85;
-  font-size: 1.1em;
-  margin-top: -20px;
-  margin-left: 48vw;
-  margin-right: 10vw;
-  padding-left: 40px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-right: 30px;
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-  z-index: 2; /* Aumenta o z-index para sobrepor */
-  position: relative; /* Necessário para que o z-index funcione */
-}
-
-#PartTwoMobile .formatThree {
-  background-color: #3ebf81;
-  font-size: 0.9em;
-  margin-left: 15vw;
-  margin-right: 17vw;
-  padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 30px;
-  border-top-right-radius: 40px;
-  border-bottom-left-radius: 40px;
-  margin-top: -20px;
-  z-index: 0;
-  position: relative;
-}
-
-#PartTwoMobile .formatFour {
-  background-color: #30c57c;
-  margin-left: 18vw;
-  margin-right: 20vw;
-  padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 30px;
-  font-size: 0.85em;
-  border-top-right-radius: 40px;
-  border-bottom-left-radius: 40px;
-  margin-top: -10px;
-  z-index: 1;
-  position: relative;
-}
-
-#PartTwoMobile .formatFive {
-  background-color: #22c576;
-  font-size: 0.9em;
-  margin-left: 17vw;
-  margin-right: 18vw;
-  padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 30px;
-  border-top-right-radius: 40px;
-  border-bottom-left-radius: 40px;
-  margin-top: -15px;
-  z-index: 2;
-  position: relative;
-}
-
-#PartTwoMobile .redirect,
-#PartFourMobile .redirect {
-  display: flex;
-  justify-content: center;
-}
-
-#PartTwoMobile .redirect button,
-#PartFourMobile .redirect button {
-  background: linear-gradient(to right, #ffffff, #cecece);
   margin-top: 10px;
   margin-bottom: 30px;
   padding-left: 30px;
@@ -236,62 +90,11 @@
   border-radius: 15px;
   border: none;
   font-size: 1.2em;
-  color: #1b6641;
+  color: #ffffff;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: 500;
   cursor: pointer;
   z-index: 2;
-}
-#PartTwoMobile .redirect button:hover,
-#PartFourMobile .redirect button:hover {
-  font-size: 1.4em;
-  transition: 0.4s;
-}
-
-#PartThreeMobile {
-  background-color: #f2f2f2;
-}
-#PartThreeMobile {
-  text-align: center;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 1.8em;
-  font-family: "Abril Fatface", serif;
-  background: linear-gradient(to right, #1fa966, #198852);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-#PartFourMobile {
-  background: #198852;
-}
-
-#PartFourMobile .video iframe {
-  margin-left: 15vw;
-  width: 70vw;
-  margin-top: 30px;
-  border: none;
-}
-
-#PartFourMobile .text {
-  font-family: "Abril Fatface", serif;
-  color: #ffffff;
-  font-weight: 500;
-  text-align: center;
-  font-size: 1.7em;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  z-index: 2;
-  position: relative;
-}
-#PartFourMobile .house {
-  text-align: right;
-  margin-top: -70px;
-}
-#PartFourMobile .house img {
-  width: 20vw;
-  z-index: 1;
 }
 
 #PartFiveMobile {
@@ -378,6 +181,11 @@
   margin-left: 10px;
 }
 
+#PartFiveMobile .prices .biggerPrice span {
+  font-size: 0.5em;
+  margin-top: 30px;
+}
+
 #PartFiveMobile .prices .smallPrice .priceOne {
   text-decoration: line-through;
 }
@@ -425,77 +233,66 @@
 
 /** Desktop **/
 @media screen and (min-width: 730px) {
-  #PartOneMobile,
-  #PartTwoMobile {
+  #PartOneMobile {
     display: none;
   }
-  #PartOneDesktop,
-  #PartTwoDesktop {
+  #PartOneDesktop {
     display: block;
   }
   #notaDeReal1 {
     width: 10vw;
-    margin-bottom: 0;
+    margin-bottom: -40px;
+    margin-left: 50vw;
   }
   #notaDeRealDiv {
     text-align: center;
     margin-left: 20vw;
   }
-  .notaDeCem img{
+  .notaDeCem img {
     width: 15vw;
-    margin-top: -100px;
-    margin-bottom: -180px;
+    margin-top: -200px;
+    margin-bottom: -80px;
     padding-left: 10vw;
   }
-  #PartOneDesktop,
-  #PartThreeDesktop {
+  #PartOneDesktop {
     background-color: #f2f2f2;
   }
   #PartOneDesktop .contentOneDesktop {
     display: flex;
-    margin-left: 20vw;
+    flex-direction: column;
+    justify-content: center;
     font-family: "Abril Fatface", serif;
   }
 
-  #PartOneDesktop .textOne {
-    font-size: 1.5em;
-    color: #242424;
-    font-weight: 400;
-    margin-bottom: -20px;
+  #PartOneDesktop .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
   }
 
+  #PartOneDesktop .textOne,
   #PartOneDesktop .textTwo {
-    font-size: 4em;
-    font-weight: 400;
-    background: linear-gradient(to right, #1fa966, #198852);
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-bottom: -10px;
-  }
-
-  #PartOneDesktop .same-line {
-    font-weight: 400;
     font-size: 1.5em;
     color: #242424;
-    display: flex;
-    align-items: center;
-    margin-bottom: -10px;
-  }
-
-  #PartOneDesktop .same-line span {
-    background: linear-gradient(to right, #1fa966, #198852);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 1.9em;
-    margin-left: 10px;
-  }
-
-  #PartOneDesktop .textFour {
     font-weight: 400;
-    font-size: 2em;
-    color: #242424;
-    display: flex;
-    align-items: center;
+    text-align: center;
+  }
+
+  #PartOneDesktop .video {
+    width: 50vw; /* Define 50% da largura da viewport */
+  position: relative;
+  padding-bottom: 28.125%; /* Proporção de 16:9 (9/16 * 50vw) */
+  height: 0;
+  margin-left: 25vw;
+  }
+  #PartOneDesktop .video iframe {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
   }
 
   #PartOneDesktop button {
@@ -519,222 +316,32 @@
   }
 
   #PartOneDesktop {
-    padding-bottom: 100px; /* Adiciona espaço suficiente para garantir que o conteúdo não seja cortado */
-  }
-  #PartOneDesktop .images {
-    display: flex;
-    justify-content: start;
+    padding-bottom: 0px; /* Adiciona espaço suficiente para garantir que o conteúdo não seja cortado */
   }
 
-  #PartOneDesktop .imageSheet {
-    width: 13vw;
-    z-index: 1;
-    margin-bottom: 100px;
-
-    position: relative;
-  }
-
-  #PartOneDesktop .imageNotebook {
-    width: 35vw;
-    margin-left: -13vw;
-    z-index: 0;
-  }
-
-  #PartTwoDesktop {
-    background: linear-gradient(to right, #198852, #3ba873);
-    display: flex;
-    padding-right: 20vw;
-    padding-left: 20vw;
-  }
-
-  #PartTwoDesktop .texts {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-family: "Abril Fatface", serif;
-    margin-bottom: 50px;
-  }
-
-  #PartTwoDesktop .textOne {
-    font-size: 2.7em;
-  }
-  #PartTwoDesktop .textTwo {
-    font-size: 1.7em;
-    color: #198852;
-    background-color: white;
-    margin-left: -5px;
-    padding-left: 5px;
-    display: inline;
-    margin-right: -5px;
-    padding-right: 5px;
-  }
-
-  #PartTwoDesktop .textThree,
-  #PartTwoDesktop .textFour {
-    font-size: 1.6em;
-  }
-
-  #PartTwoDesktop .formats {
-    width: 30vw;
-    margin-top: 30px;
-    margin-left: -5vw;
-  }
-
-  #PartTwoDesktop .formats div {
-    color: white;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-
-  #PartTwoDesktop .formatOne {
-    background-color: #3ba873;
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    font-size: 0.8em;
-    width: 20vw;
-  }
-
-  #PartTwoDesktop .formatTwo {
-    width: 8vw;
-    background-color: #39cd85;
-    font-size: 0.8em;
-    padding-left: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
-    margin-left: 20vw;
-    margin-top: -30px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    z-index: 2; /* Aumenta o z-index para sobrepor */
-    position: relative; /* Necessário para que o z-index funcione */
-  }
-
-  #PartTwoDesktop .formatThree {
-    background-color: #3ebf81;
-    font-size: 0.8em;
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-    border-top-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-    width: 20vw;
-    margin-left: 5vw;
-    margin-top: -20px;
-    z-index: 0;
-    position: relative;
-  }
-
-  #PartTwoDesktop .formatFour {
-    background-color: #30c57c;
-    width: 20vw;
-    margin-left: 3vw;
-    margin-top: -10px;
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-    font-size: 0.8em;
-    border-top-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-    z-index: 1;
-    position: relative;
-  }
-
-  #PartTwoDesktop .formatFive {
-    margin-top: 70px;
-    background-color: #22c576;
-    font-size: 1em;
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-    border-top-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-    width: 20vw;
-    z-index: 2;
-    position: relative;
-    margin-bottom: 30px;
-  }
-
-  #PartTwoDesktop .redirect,
-  #PartFourDesktop .redirect {
+  #PartOneDesktop .redirect {
     display: flex;
     justify-content: center;
-    margin-left: -15vw;
-    margin-top: -20px;
   }
-
-  #PartTwoDesktop .redirect button,
-  #PartFourDesktop .redirect button {
-    background: linear-gradient(to right, #ffffff, #cecece);
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding-left: 30px;
+  #PartOneDesktop .redirect button {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-left: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-right: 30px;
+    padding-right: 50px;
     border-radius: 15px;
     border: none;
     font-size: 1.2em;
-    color: #1b6641;
+    color: #ffffff;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-weight: 500;
     cursor: pointer;
+    z-index: 2;
   }
-  #PartTwoDesktop .redirect button:hover,
-  #PartFourDesktop .redirect button:hover {
-    font-size: 1.4em;
+  #PartOneDesktop .redirect button:hover {
+    font-size: 1.3em;
     transition: 0.4s;
-  }
-  #PartFourMobile {
-    background: #198852;
-    display: flex;
-    padding-bottom: 80px;
-    padding-top: 80px;
-  }
-
-  #PartFourMobile .video iframe {
-    margin-left: 10vw;
-
-    margin-top: 0;
-    width: 40vw;
-    height: 300px;
-    border: none;
-  }
-
-  #PartFourMobile .second {
-    margin-top: 25px;
-    width: 30vw;
-    margin-left: 5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #PartFourMobile .second .text {
-    font-family: "Abril Fatface", serif;
-    color: #ffffff;
-    font-weight: 500;
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 2em;
-  }
-
-  #PartFourMobile .house {
-    margin-left: 25vw;
-    margin-top: -270px;
-  }
-
-  #PartFourMobile .house img {
-    width: 20vw;
   }
   #PartFiveMobile .textOne {
     text-align: center;
@@ -837,42 +444,6 @@
 }
 
 @media screen and (min-width: 1100px) {
-  #PartTwoDesktop .textOne {
-    font-size: 3.3em;
-  }
-  #PartTwoDesktop .textTwo {
-    font-size: 2.3em;
-  }
-
-  #PartTwoDesktop .textThree,
-  #PartTwoDesktop .textFour {
-    font-size: 2.3em;
-  }
-
-  #PartTwoDesktop .formatOne {
-    font-size: 1em;
-  }
-
-  #PartTwoDesktop .formatTwo {
-    font-size: 1em;
-  }
-
-  #PartTwoDesktop .formatThree {
-    font-size: 1em;
-  }
-
-  #PartTwoDesktop .formatFour {
-    font-size: 1em;
-  }
-
-  #PartTwoDesktop .formatFive {
-    font-size: 1em;
-    margin-top: 30px;
-  }
-  #PartTwoDesktop .redirect,
-  #PartFourDesktop .redirect {
-    margin-left: -10vw;
-  }
   #PartFiveMobile .videosAndPrices {
     margin-top: -30px;
   }
